@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | MSR Studio Developer Portfolio</title>
-  <meta name="description" content="Official Unified Privacy Policy and Google Play Store declarations for mobile applications published by MSR Studio (Bangladesh), including Chhuti (ছুটি) and Country Info (দেশ পরিচিতি).">
+  <title>Privacy Policy | MSR Studio</title>
+  <meta name="description" content="Official Privacy Policy and Google Play Store declarations for mobile applications published by MSR Studio (Bangladesh).">
   <meta name="author" content="MSR Studio">
   <meta name="robots" content="index, follow">
   
@@ -39,10 +39,6 @@
       --warning: #d97706;
       --warning-subtle: #fffbeb;
       --warning-border: #fde68a;
-      
-      --danger: #dc2626;
-      --danger-subtle: #fef2f2;
-      --danger-border: #fecaca;
 
       --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
       --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -75,10 +71,6 @@
       --warning: #fbbf24;
       --warning-subtle: rgba(251, 191, 36, 0.15);
       --warning-border: rgba(251, 191, 36, 0.3);
-
-      --danger: #f87171;
-      --danger-subtle: rgba(248, 113, 113, 0.15);
-      --danger-border: rgba(248, 113, 113, 0.3);
 
       --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
       --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
@@ -115,11 +107,10 @@
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border-subtle);
       backdrop-filter: blur(8px);
-      transition: background-color 0.25s ease, border-color 0.25s ease;
     }
 
     .nav-container {
-      max-width: 1240px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0.75rem 1.5rem;
       display: flex;
@@ -194,11 +185,11 @@
 
     /* Main Container Layout */
     .page-layout {
-      max-width: 1240px;
+      max-width: 1200px;
       margin: 2rem auto;
       padding: 0 1.5rem;
       display: grid;
-      grid-template-columns: 290px 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 2.5rem;
       flex: 1;
       width: 100%;
@@ -210,10 +201,10 @@
       top: 5rem;
       height: calc(100vh - 6rem);
       overflow-y: auto;
-      padding-right: 1rem;
+      padding-right: 0.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .sidebar::-webkit-scrollbar {
@@ -233,7 +224,7 @@
     }
 
     .sidebar-title {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--text-subtle);
@@ -282,7 +273,7 @@
 
     .quick-meta-item strong {
       color: var(--text-main);
-      min-width: 70px;
+      min-width: 65px;
     }
 
     /* Content Area */
@@ -362,12 +353,12 @@
       color: var(--text-muted);
       line-height: 1.6;
       margin-bottom: 1.5rem;
-      max-width: 850px;
+      max-width: 800px;
     }
 
     .hero-meta-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem;
       padding-top: 1.25rem;
       border-top: 1px solid var(--border-subtle);
@@ -396,61 +387,51 @@
       word-break: break-word;
     }
 
-    /* App Portfolio Cards */
-    .portfolio-grid {
+    /* Covered Apps Grid */
+    .apps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
       margin-bottom: 2rem;
     }
 
-    .app-card {
+    .app-box {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 1.35rem;
+      padding: 1.25rem;
       display: flex;
-      gap: 1rem;
+      gap: 0.85rem;
       box-shadow: var(--shadow-sm);
-      transition: transform 0.2s ease, border-color 0.2s ease;
     }
 
-    .app-card:hover {
-      border-color: var(--primary-border);
-      transform: translateY(-2px);
-    }
-
-    .app-icon-box {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+    .app-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
-      flex-shrink: 0;
+      font-size: 1.4rem;
       background: var(--bg-subtle);
       border: 1px solid var(--border-subtle);
+      flex-shrink: 0;
     }
 
-    .app-details {
+    .app-info {
       display: flex;
       flex-direction: column;
-      gap: 0.35rem;
+      gap: 0.25rem;
       min-width: 0;
     }
 
-    .app-title {
-      font-size: 1rem;
+    .app-name {
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
     }
 
-    .app-package {
+    .app-pkg {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-subtle);
@@ -462,22 +443,16 @@
     }
 
     .app-desc {
-      font-size: 0.85rem;
+      font-size: 0.825rem;
       color: var(--text-muted);
-      line-height: 1.45;
-    }
-
-    .app-tags {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
+      line-height: 1.4;
       margin-top: 0.25rem;
     }
 
-    /* Core Highlights Grid */
+    /* Highlight Banner Cards */
     .highlights-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
       margin-bottom: 2rem;
     }
@@ -494,20 +469,20 @@
     }
 
     .highlight-icon {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1;
     }
 
     .highlight-title {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 700;
       color: var(--text-main);
     }
 
     .highlight-desc {
-      font-size: 0.85rem;
+      font-size: 0.825rem;
       color: var(--text-muted);
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     /* Policy Content Sections */
@@ -534,19 +509,19 @@
       background: var(--primary-subtle);
       color: var(--primary);
       border: 1px solid var(--primary-border);
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       flex-shrink: 0;
     }
 
     .section-title {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--text-main);
     }
@@ -563,12 +538,12 @@
 
     .policy-section ul,
     .policy-section ol {
-      margin: 0.75rem 0 1.25rem 1.5rem;
+      margin: 0.5rem 0 1rem 1.4rem;
       color: var(--text-muted);
     }
 
     .policy-section li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.45rem;
       line-height: 1.6;
     }
 
@@ -589,11 +564,11 @@
     /* Callout & Notice Boxes */
     .callout {
       border-radius: 10px;
-      padding: 1.15rem 1.25rem;
+      padding: 1rem 1.25rem;
       margin: 1.25rem 0;
       border-left: 4px solid;
       background: var(--bg-subtle);
-      font-size: 0.925rem;
+      font-size: 0.9rem;
       line-height: 1.6;
     }
 
@@ -602,7 +577,7 @@
       align-items: center;
       gap: 0.5rem;
       font-weight: 700;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .callout-warning {
@@ -710,7 +685,7 @@
     .page-footer {
       background: var(--bg-surface);
       border-top: 1px solid var(--border-subtle);
-      padding: 2.5rem 1.5rem;
+      padding: 2.25rem 1.5rem;
       margin-top: 3rem;
       text-align: center;
       color: var(--text-subtle);
@@ -718,7 +693,7 @@
     }
 
     .footer-container {
-      max-width: 1240px;
+      max-width: 1200px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -782,9 +757,6 @@
       .hero-title {
         font-size: 1.75rem;
       }
-      .portfolio-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     /* Print Styles */
@@ -811,7 +783,7 @@
       .hero-header,
       .policy-section,
       .highlight-card,
-      .app-card {
+      .app-box {
         border: 1px solid #ccc !important;
         box-shadow: none !important;
         break-inside: avoid;
@@ -821,10 +793,6 @@
       a {
         text-decoration: underline !important;
         color: #000 !important;
-      }
-      a::after {
-        content: " (" attr(href) ")";
-        font-size: 9pt;
       }
     }
   </style>
@@ -838,7 +806,7 @@
         <div class="brand-icon">M</div>
         <div>
           <span>MSR Studio</span>
-          <span style="display:block; font-size:0.7rem; font-weight:normal; color:var(--text-subtle);">Bangladesh &bull; Google Play Portfolio Policy</span>
+          <span style="display:block; font-size:0.7rem; font-weight:normal; color:var(--text-subtle);">Bangladesh &bull; Google Play Portfolio</span>
         </div>
       </a>
 
@@ -856,7 +824,7 @@
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
             <rect x="6" y="14" width="12" height="8"></rect>
           </svg>
-          <span>Print / PDF</span>
+          <span>Print</span>
         </button>
 
         <a href="mailto:blueskyoceanbd@gmail.com" class="btn btn-primary" title="Email Developer Support">
@@ -864,7 +832,7 @@
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-          <span>Contact Support</span>
+          <span>Support</span>
         </a>
       </div>
     </div>
@@ -880,28 +848,25 @@
         <nav>
           <ul class="toc-list" id="tocList">
             <li><a href="#overview" class="toc-link">1. Overview &amp; Scope</a></li>
-            <li><a href="#app-portfolio" class="toc-link">2. Covered Applications</a></li>
-            <li><a href="#developer-identity" class="toc-link">3. Developer Information</a></li>
-            <li><a href="#data-collection" class="toc-link">4. Information Collected</a></li>
-            <li><a href="#location-declaration" class="toc-link">5. Location Policy (Chhuti)</a></li>
-            <li><a href="#countryapp-declaration" class="toc-link">6. Country Info Declaration</a></li>
-            <li><a href="#advertising-admob" class="toc-link">7. Ads &amp; Advertising ID</a></li>
-            <li><a href="#third-party-sdks" class="toc-link">8. Third-Party Services</a></li>
-            <li><a href="#target-audience" class="toc-link">9. Children &amp; Age Rating</a></li>
-            <li><a href="#government-affiliation" class="toc-link">10. Non-Gov Affiliation</a></li>
-            <li><a href="#data-safety-matrix" class="toc-link">11. Play Data Safety Matrix</a></li>
-            <li><a href="#data-retention-deletion" class="toc-link">12. Data Deletion Rights</a></li>
-            <li><a href="#security" class="toc-link">13. Security Measures</a></li>
-            <li><a href="#user-rights" class="toc-link">14. User Privacy Rights</a></li>
-            <li><a href="#contact" class="toc-link">15. Contact Developer</a></li>
+            <li><a href="#covered-apps" class="toc-link">2. Covered Apps</a></li>
+            <li><a href="#data-collection" class="toc-link">3. Information Handling</a></li>
+            <li><a href="#location-declaration" class="toc-link">4. Location (GPS) Policy</a></li>
+            <li><a href="#advertising-admob" class="toc-link">5. Ads &amp; Advertising ID</a></li>
+            <li><a href="#third-party-sdks" class="toc-link">6. Third-Party Services</a></li>
+            <li><a href="#target-audience" class="toc-link">7. Children &amp; Age Rating</a></li>
+            <li><a href="#government-affiliation" class="toc-link">8. Non-Gov Disclaimer</a></li>
+            <li><a href="#data-safety-matrix" class="toc-link">9. Data Safety Matrix</a></li>
+            <li><a href="#data-deletion" class="toc-link">10. Data Deletion Rights</a></li>
+            <li><a href="#security" class="toc-link">11. Security</a></li>
+            <li><a href="#contact" class="toc-link">12. Contact Developer</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="sidebar-card quick-meta-box">
-        <h3 class="sidebar-title">Quick Verification</h3>
+        <h3 class="sidebar-title">Developer Details</h3>
         <div class="quick-meta-item">
-          <strong>Account:</strong>
+          <strong>Developer:</strong>
           <span>MSR Studio</span>
         </div>
         <div class="quick-meta-item">
@@ -917,17 +882,13 @@
           <span>General (13+)</span>
         </div>
         <div class="quick-meta-item">
-          <strong>Location:</strong>
-          <span>Ephemeral On-Device</span>
-        </div>
-        <div class="quick-meta-item">
           <strong>Ads:</strong>
-          <span>Google AdMob (AD_ID)</span>
+          <span>Google AdMob (`AD_ID`)</span>
         </div>
       </div>
     </aside>
 
-    <!-- Content Body -->
+    <!-- Main Content Area -->
     <main class="content-area">
 
       <!-- Hero Header -->
@@ -940,9 +901,8 @@
 
         <h1 class="hero-title">Privacy Policy &amp; Store Declarations</h1>
         <p class="hero-subtitle">
-          Official unified privacy policy, legal disclosures, and Google Play Store Developer Program 
-          declarations governing all mobile applications created, published, and maintained by 
-          <strong>MSR Studio</strong> (Bangladesh).
+          Official privacy policy and Google Play Store declarations governing mobile applications 
+          published by <strong>MSR Studio</strong> (Bangladesh).
         </p>
 
         <div class="hero-meta-grid">
@@ -951,114 +911,91 @@
             <span class="meta-value">MSR Studio</span>
           </div>
           <div class="hero-meta-card">
-            <span class="meta-label">Official Support Email</span>
+            <span class="meta-label">Developer Support Email</span>
             <span class="meta-value">blueskyoceanbd@gmail.com</span>
           </div>
           <div class="hero-meta-card">
-            <span class="meta-label">Developer Country</span>
+            <span class="meta-label">Country</span>
             <span class="meta-value">Bangladesh</span>
           </div>
           <div class="hero-meta-card">
-            <span class="meta-label">Effective Date</span>
-            <span class="meta-value">October 20, 2026</span>
+            <span class="meta-label">Last Updated</span>
+            <span class="meta-value">October 2026</span>
           </div>
         </div>
       </section>
 
-      <!-- App Portfolio Showcase -->
-      <section id="app-portfolio" style="margin-bottom: 2rem;">
-        <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span>📦 Covered Applications in MSR Studio Portfolio</span>
-        </h2>
-        
-        <div class="portfolio-grid">
-          
-          <!-- App 1: Country Info -->
-          <div class="app-card">
-            <div class="app-icon-box">🌍</div>
-            <div class="app-details">
-              <div class="app-title">
-                <span>Country Info | দেশ পরিচিতি</span>
-                <span class="badge badge-accent" style="font-size:0.65rem;">Active on Play Store</span>
-              </div>
-              <span class="app-package">com.msr.countryapp</span>
-              <p class="app-desc">
-                Educational reference and world statistics guide featuring countries, capitals, flags, currencies, land area, GDP, and leadership data.
-              </p>
-              <div class="app-tags">
-                <span class="badge badge-primary">Educational</span>
-                <span class="badge badge-warning">AdMob Ads</span>
-                <span class="badge badge-accent">No Location Required</span>
-              </div>
-              <div style="margin-top:0.4rem;">
-                <a href="https://play.google.com/store/apps/details?id=com.msr.countryapp" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem; font-weight:600; text-decoration:none; color:var(--primary); display:inline-flex; align-items:center; gap:0.25rem;">
-                  <span>View on Google Play Store &rarr;</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- App 2: Chhuti Travel Guide -->
-          <div class="app-card">
-            <div class="app-icon-box">✈️</div>
-            <div class="app-details">
-              <div class="app-title">
-                <span>Chhuti (ছুটি) &ndash; Travel Guide</span>
-                <span class="badge badge-primary" style="font-size:0.65rem;">Official Guide</span>
-              </div>
-              <span class="app-package">com.travelguide.bangladesh</span>
-              <p class="app-desc">
-                Comprehensive offline-first travel companion covering 8 divisions, 64 districts, curated spots, interactive maps, and emergency hotlines.
-              </p>
-              <div class="app-tags">
-                <span class="badge badge-primary">Travel &amp; Local</span>
-                <span class="badge badge-warning">AdMob Ads</span>
-                <span class="badge badge-accent">Ephemeral On-Device GPS</span>
-              </div>
-              <div style="margin-top:0.4rem;">
-                <span style="font-size:0.8rem; color:var(--text-subtle);">Production Release v1.0.0</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Search Box -->
+      <!-- Search Filter Bar -->
       <div class="filter-wrapper">
         <input 
           type="text" 
           id="policySearchInput" 
           class="search-input" 
-          placeholder="Filter policy clauses (e.g., countryapp, location, AdMob, deletion, children, government)..."
+          placeholder="Filter policy clauses (e.g., location, AdMob, countryapp, deletion)..."
           aria-label="Filter policy clauses"
         >
       </div>
 
-      <!-- Highlights Banner -->
+      <!-- Covered Apps Showcase -->
+      <section id="covered-apps" style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.85rem;">
+          📦 Covered Applications
+        </h2>
+        <div class="apps-grid">
+          
+          <div class="app-box">
+            <div class="app-icon">🌍</div>
+            <div class="app-info">
+              <div class="app-name">Country Info | দেশ পরিচিতি</div>
+              <span class="app-pkg">com.msr.countryapp</span>
+              <p class="app-desc">Educational general knowledge and statistics guide for world nations.</p>
+              <div style="margin-top: 0.35rem;">
+                <span class="badge badge-accent" style="font-size: 0.65rem;">No Location Required</span>
+                <span class="badge badge-warning" style="font-size: 0.65rem;">AdMob Ads</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-box">
+            <div class="app-icon">✈️</div>
+            <div class="app-info">
+              <div class="app-name">Chhuti (ছুটি) &ndash; Bangladesh Travel Guide</div>
+              <span class="app-pkg">com.travelguide.bangladesh</span>
+              <p class="app-desc">Offline travel companion covering 8 divisions, attractions, and local maps.</p>
+              <div style="margin-top: 0.35rem;">
+                <span class="badge badge-primary" style="font-size: 0.65rem;">Ephemeral On-Device GPS</span>
+                <span class="badge badge-warning" style="font-size: 0.65rem;">AdMob Ads</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Highlights Grid -->
       <div class="highlights-grid">
         <div class="highlight-card">
           <div class="highlight-icon">🔒</div>
           <div class="highlight-title">No Account Required</div>
-          <div class="highlight-desc">Access full educational guides, country statistics, and offline travel features freely without account creation or login passwords.</div>
+          <div class="highlight-desc">Access all features without creating accounts, entering passwords, or submitting personal data.</div>
         </div>
 
         <div class="highlight-card">
           <div class="highlight-icon">📍</div>
           <div class="highlight-title">Zero Remote Tracking</div>
-          <div class="highlight-desc">Location is only used on-device in Chhuti for distance calculation. Country Info collects zero location data. Neither app uploads coordinates.</div>
+          <div class="highlight-desc">Location is processed on-device only for distance calculation in Chhuti. Coordinates are never uploaded.</div>
         </div>
 
         <div class="highlight-card">
           <div class="highlight-icon">🛡️</div>
-          <div class="highlight-title">Complete User Control</div>
-          <div class="highlight-desc">All user preferences, bookmarks, and cached packages reside strictly in device sandbox storage, clearable at any moment.</div>
+          <div class="highlight-title">Local User Control</div>
+          <div class="highlight-desc">User bookmarks and cached content reside strictly in local device sandbox storage.</div>
         </div>
 
         <div class="highlight-card">
           <div class="highlight-icon">🇧🇩</div>
-          <div class="highlight-title">Independent Studio</div>
-          <div class="highlight-desc">MSR Studio is an independent developer from Bangladesh. Our apps are not affiliated with any government worldwide.</div>
+          <div class="highlight-title">Independent Publisher</div>
+          <div class="highlight-desc">MSR Studio is an independent private developer with no official government affiliation.</div>
         </div>
       </div>
 
@@ -1066,255 +1003,112 @@
       <article class="policy-section">
         <div class="section-header">
           <span class="section-num">1</span>
-          <h2 class="section-title">Introduction &amp; Scope of Policy</h2>
+          <h2 class="section-title">Introduction &amp; Scope</h2>
         </div>
         <p>
-          Welcome to <strong>MSR Studio</strong> ("we," "our," or "us"). We design, build, and maintain quality Android mobile applications focused on educational reference, tourism, and everyday utility. 
+          This Privacy Policy governs mobile applications published by <strong>MSR Studio</strong> on the Google Play Store, including <strong>Country Info | দেশ পরিচিতি</strong> (<code>com.msr.countryapp</code>), <strong>Chhuti (ছুটি) &ndash; Bangladesh Travel Guide</strong> (<code>com.travelguide.bangladesh</code>), and associated software products.
         </p>
         <p>
-          This Unified Privacy Policy applies to all applications published by MSR Studio on the <strong>Google Play Store</strong>, specifically including but not limited to:
-        </p>
-        <ul>
-          <li><strong>Country Info | দেশ পরিচিতি</strong> (Package Name: <code>com.msr.countryapp</code>);</li>
-          <li><strong>Chhuti (ছুটি) &ndash; Bangladesh Travel Guide</strong> (Package Name: <code>com.travelguide.bangladesh</code>);</li>
-          <li>Any associated updates, utility tools, and subsequent releases published under our Google Play Console account.</li>
-        </ul>
-        <p>
-          We believe in complete transparency and data minimization. This policy outlines what data is processed, how third-party SDKs operate, and how we protect your rights under Google Play Developer Program Policies and international privacy regulations.
+          We are committed to user privacy and practice data minimization. We do not require account sign-ups, passwords, or personal registrations.
         </p>
       </article>
 
       <!-- Section 2 -->
-      <article class="policy-section" id="developer-identity">
+      <article class="policy-section" id="data-collection">
         <div class="section-header">
           <span class="section-num">2</span>
-          <h2 class="section-title">Developer &amp; Publisher Identity</h2>
+          <h2 class="section-title">Information Handling &amp; Storage</h2>
         </div>
         <p>
-          In accordance with Google Play Store developer disclosure standards:
+          We do <strong>not</strong> collect personal identifiable information (such as personal names, phone numbers, contact books, or financial credentials).
         </p>
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Attribute</th>
-                <th>Declared Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Developer Entity Name</strong></td>
-                <td>MSR Studio</td>
-              </tr>
-              <tr>
-                <td><strong>Official Support Email</strong></td>
-                <td><a href="mailto:blueskyoceanbd@gmail.com">blueskyoceanbd@gmail.com</a></td>
-              </tr>
-              <tr>
-                <td><strong>Country of Origin / Jurisdiction</strong></td>
-                <td>Bangladesh</td>
-              </tr>
-              <tr>
-                <td><strong>Primary Distribution Platform</strong></td>
-                <td>Google Play Store (Android OS)</td>
-              </tr>
-              <tr>
-                <td><strong>Published Package Names</strong></td>
-                <td><code>com.msr.countryapp</code> &bull; <code>com.travelguide.bangladesh</code></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <p>
+          <strong>Local Device Storage:</strong> In-app user configurations (such as saved favorites, bookmarks, or downloaded offline guide packs) are saved strictly in your device's private sandbox storage (local SQLite / app storage) and are never transmitted to external cloud servers.
+        </p>
       </article>
 
       <!-- Section 3 -->
-      <article class="policy-section" id="data-collection">
-        <div class="section-header">
-          <span class="section-num">3</span>
-          <h2 class="section-title">Information We Access &amp; Collect</h2>
-        </div>
-        <p>
-          MSR Studio operates under strict <em>data minimization</em> principles. Neither Country Info nor Chhuti maintains centralized cloud user accounts.
-        </p>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">A. Information Stored Locally on Your Device</h3>
-        <p>
-          When you use in-app features such as saving country facts, bookmarking travel destinations, taking notes, or downloading offline data packages, this information is stored <strong>locally in your device's private storage</strong> (SQLite database or local cache). It is never sent to our servers.
-        </p>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">B. Technical Device Data</h3>
-        <p>
-          When accessing network resources (such as downloading database updates, country flag graphics, or viewing ad impressions), standard technical metadata is processed by Android and third-party SDKs:
-        </p>
-        <ul>
-          <li><strong>Device Model &amp; OS Version:</strong> To ensure proper layout rendering and compatibility across Android versions;</li>
-          <li><strong>Language &amp; Locale:</strong> To automatically switch language between Bengali (বাংলা) and English;</li>
-          <li><strong>Network State:</strong> To detect whether an internet connection is active before initiating downloads.</li>
-        </ul>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">C. Information We Do NOT Collect</h3>
-        <p>
-          We do <strong>not</strong> collect names, home addresses, phone numbers, contact lists, microphone audio, camera photos, biometric data, or financial/payment credentials.
-        </p>
-      </article>
-
-      <!-- Section 4 -->
       <article class="policy-section" id="location-declaration">
         <div class="section-header">
-          <span class="section-num">4</span>
-          <h2 class="section-title">Location Data (GPS) Declaration &bull; Chhuti Specific</h2>
+          <span class="section-num">3</span>
+          <h2 class="section-title">Location Data (GPS) Declaration</h2>
         </div>
         
         <div class="callout callout-info">
           <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-            Location Usage Scope: Chhuti (ছুটি) Only &bull; Ephemeral On-Device
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Location Usage Summary
           </div>
-          <strong>Country Info (<code>com.msr.countryapp</code>) does NOT request or use location permissions.</strong> Location permissions are only utilized by Chhuti (<code>com.travelguide.bangladesh</code>) for calculating distance to tourist spots.
+          <strong>Country Info (<code>com.msr.countryapp</code>) does NOT request location access.</strong> Location permission is only used by Chhuti (<code>com.travelguide.bangladesh</code>) for calculating distance to nearby attractions.
+        </div>
+
+        <p><strong>Location Handling Terms for Chhuti:</strong></p>
+        <ul>
+          <li><strong>Ephemeral In-Memory Calculation:</strong> GPS coordinates are processed temporarily in memory on your phone to calculate distance to tourist destinations.</li>
+          <li><strong>No Remote Uploads:</strong> Coordinates are never stored on or transmitted to external servers.</li>
+          <li><strong>Zero Background Tracking:</strong> Location is queried only while you are actively viewing the map or nearby attractions screen in the foreground.</li>
+          <li><strong>Optional:</strong> You can revoke location permission at any time in Android settings without losing core app functionality.</li>
+        </ul>
+      </article>
+
+      <!-- Section 4 -->
+      <article class="policy-section" id="advertising-admob">
+        <div class="section-header">
+          <span class="section-num">4</span>
+          <h2 class="section-title">Advertising &amp; Google Advertising ID (AD_ID)</h2>
+        </div>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            Play Console Declaration: Apps contain advertisements
+          </div>
+          Our free applications display advertisements provided by Google AdMob to support continuous app updates and maintenance.
         </div>
 
         <p>
-          When using Chhuti, the app may request runtime access to:
+          Google Mobile Ads SDK (AdMob) may access your Android <strong>Advertising ID (<code>AD_ID</code>)</strong> to manage ad frequency, prevent fraud, and serve ads.
         </p>
-        <ul>
-          <li><code>ACCESS_COARSE_LOCATION</code> (approximate location)</li>
-          <li><code>ACCESS_FINE_LOCATION</code> (precise GPS coordinates)</li>
-        </ul>
-
-        <p><strong>Strict Location Handling Terms:</strong></p>
-        <ol>
-          <li><strong>Ephemeral In-Memory Calculation:</strong> Coordinates are processed exclusively on your device in real-time memory to calculate distance to tourist destinations.</li>
-          <li><strong>No Remote Uploads:</strong> Coordinates are never transmitted to MSR Studio servers, third parties, or cloud databases.</li>
-          <li><strong>Zero Background Tracking:</strong> Neither app requests <code>ACCESS_BACKGROUND_LOCATION</code>. GPS ceases querying as soon as you navigate away from the map or nearby attractions view.</li>
-          <li><strong>Completely Optional:</strong> You can deny location permission; both apps remain functional.</li>
-        </ol>
+        <p>
+          <strong>How to Opt Out:</strong> You can reset or delete your Advertising ID anytime by opening Android <strong>Settings &gt; Google &gt; Ads</strong> (or <strong>Privacy &gt; Ads</strong>) and choosing <em>"Delete advertising ID"</em>.
+        </p>
       </article>
 
       <!-- Section 5 -->
-      <article class="policy-section" id="countryapp-declaration">
-        <div class="section-header">
-          <span class="section-num">5</span>
-          <h2 class="section-title">Special Declarations &bull; Country Info (দেশ পরিচিতি)</h2>
-        </div>
-
-        <p>
-          <strong>Country Info | দেশ পরিচিতি</strong> (<code>com.msr.countryapp</code>) is an educational reference application providing public-interest statistics and general knowledge regarding world nations (capitals, flags, currencies, land area, population estimates, literacy rates, and leadership).
-        </p>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">A. Source of Public Domain Reference Data</h3>
-        <p>
-          Information provided in Country Info is curated from reputable, publicly accessible knowledge sources, including:
-        </p>
-        <ul>
-          <li>The United Nations Statistics Division (UNdata) &amp; open demographic records;</li>
-          <li>The World Factbook and open national geographic portals;</li>
-          <li>Public domain encyclopedic databases and official diplomatic reference lists.</li>
-        </ul>
-        <p>
-          All information is compiled strictly for <strong>educational, general knowledge, and student reference purposes</strong>.
-        </p>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">B. Worldwide Non-Government Affiliation Disclaimer</h3>
-        <div class="callout callout-warning">
-          <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
-            Global Non-Governmental Entity Disclosure
-          </div>
-          <strong>Country Info (দেশ পরিচিতি) is NOT an official government app and does NOT represent, speak for, or act on behalf of any foreign government, the United Nations, or the Government of Bangladesh.</strong>
-        </div>
-        <p>
-          The display of national flags, anthems, currencies, political leaders, or geographical maps within Country Info does not imply official endorsement, affiliation, or formal mandate from any national sovereign entity.
-        </p>
-      </article>
-
-      <!-- Section 6 -->
-      <article class="policy-section" id="advertising-admob">
-        <div class="section-header">
-          <span class="section-num">6</span>
-          <h2 class="section-title">Advertising &amp; Google Advertising ID (AD_ID) Declaration</h2>
-        </div>
-
-        <div class="callout callout-warning">
-          <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-            Play Console Declaration: Yes, our apps contain ads
-          </div>
-          In compliance with Google Play Store Policies, we declare that both <strong>Country Info</strong> and <strong>Chhuti</strong> display in-app advertisements provided by Google AdMob to support ongoing development, research, and server bandwidth.
-        </div>
-
-        <p>
-          To serve ads, the Google Mobile Ads SDK (AdMob) may automatically access your Android <strong>Advertising ID (<code>AD_ID</code>)</strong> and diagnostic signals.
-        </p>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">How AdMob Uses Advertising IDs:</h3>
-        <ul>
-          <li><strong>Frequency Capping:</strong> Limiting repetitive impressions of identical ads;</li>
-          <li><strong>Anti-Fraud Protection:</strong> Detecting automated clicks, bots, and invalid traffic;</li>
-          <li><strong>Ad Personalization (Subject to Consent):</strong> Serving relevant contextual or interest-based ads where permitted.</li>
-        </ul>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">Opting Out of Personalized Advertising:</h3>
-        <p>
-          You can reset or delete your Advertising ID at any time:
-        </p>
-        <ol>
-          <li>Open Android <strong>Settings</strong>.</li>
-          <li>Navigate to <strong>Google &gt; Ads</strong> (or <strong>Privacy &gt; Ads</strong>).</li>
-          <li>Select <strong>"Delete advertising ID"</strong> or toggle <strong>"Opt out of Ads Personalization"</strong>.</li>
-        </ol>
-        <p>
-          For more details, review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Policies</a>.
-        </p>
-      </article>
-
-      <!-- Section 7 -->
       <article class="policy-section" id="third-party-sdks">
         <div class="section-header">
-          <span class="section-num">7</span>
-          <h2 class="section-title">Third-Party Services &amp; SDK Declarations</h2>
+          <span class="section-num">5</span>
+          <h2 class="section-title">Third-Party Services</h2>
         </div>
-        <p>
-          Our mobile applications integrate trusted, industry-standard third-party SDKs to provide core runtime services, offline map rendering, and ad delivery:
-        </p>
-
+        <p>Our applications utilize standard, trusted third-party SDKs:</p>
+        
         <div class="table-container">
           <table>
             <thead>
               <tr>
-                <th>Service / Partner</th>
+                <th>Service</th>
                 <th>App Scope</th>
                 <th>Purpose</th>
-                <th>Data Processed</th>
-                <th>Privacy Policy Link</th>
+                <th>Privacy Policy</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>Google Play Services</strong></td>
                 <td>All Apps</td>
-                <td>Android core services &amp; licensing</td>
-                <td>Hardware IDs, OS metrics</td>
+                <td>Core Android runtime services</td>
                 <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
               </tr>
               <tr>
                 <td><strong>Google AdMob</strong></td>
                 <td>All Apps</td>
-                <td>Banner &amp; interstitial advertisements</td>
-                <td>Advertising ID (`AD_ID`), IP address</td>
-                <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Data Policy</a></td>
+                <td>In-app advertising</td>
+                <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policy</a></td>
               </tr>
               <tr>
-                <td><strong>Firebase / Analytics</strong></td>
-                <td>All Apps</td>
-                <td>Anonymized crash diagnostics (if enabled)</td>
-                <td>Crash traces, device model</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Policy</a></td>
-              </tr>
-              <tr>
-                <td><strong>OpenStreetMap / Tile CDNs</strong></td>
+                <td><strong>OpenStreetMap</strong></td>
                 <td>Chhuti Only</td>
-                <td>Interactive map tile rendering</td>
-                <td>Tile request headers</td>
+                <td>Map tile rendering</td>
                 <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSM Foundation</a></td>
               </tr>
             </tbody>
@@ -1322,220 +1116,139 @@
         </div>
       </article>
 
-      <!-- Section 8 -->
+      <!-- Section 6 -->
       <article class="policy-section" id="target-audience">
         <div class="section-header">
-          <span class="section-num">8</span>
-          <h2 class="section-title">Target Audience &amp; Children's Privacy (COPPA)</h2>
+          <span class="section-num">6</span>
+          <h2 class="section-title">Children's Privacy (COPPA &amp; Families Policy)</h2>
         </div>
-
-        <div class="callout callout-info">
-          <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
-            Play Console Target Audience Declaration: Age 13 and Older (13+)
-          </div>
-          All applications in MSR Studio's portfolio are developed for general audiences aged 13 and older (students, tourists, general readers, and adults).
-        </div>
-
         <p>
-          In strict compliance with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>:
+          Our applications are designed for general audiences aged <strong>13 and older (13+)</strong>. We do not intentionally collect personal data from children under 13. If any parent or guardian believes personal data has inadvertently been submitted, please notify us at <a href="mailto:blueskyoceanbd@gmail.com">blueskyoceanbd@gmail.com</a> for prompt removal.
         </p>
-        <ul>
-          <li>Our apps do not knowingly solicit, collect, or store personal information from children under 13 years of age.</li>
-          <li>Our target age category declared in Google Play Console is <strong>13 and older</strong>.</li>
-          <li>If we become aware that personal information has inadvertently been gathered from a child under the age of 13 without verifiable parental consent, we will delete that information immediately. Parents or legal guardians may contact us at <a href="mailto:blueskyoceanbd@gmail.com">blueskyoceanbd@gmail.com</a> for prompt resolution.</li>
-        </ul>
       </article>
 
-      <!-- Section 9 -->
+      <!-- Section 7 -->
       <article class="policy-section" id="government-affiliation">
         <div class="section-header">
-          <span class="section-num">9</span>
-          <h2 class="section-title">Government Non-Affiliation Legal Declaration</h2>
+          <span class="section-num">7</span>
+          <h2 class="section-title">Non-Government Entity Disclaimer</h2>
         </div>
-
         <div class="callout callout-warning">
           <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
-            Important Disclosure &bull; Independent Studio
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+            Independent Developer Disclosure
           </div>
-          <strong>MSR Studio is NOT affiliated with, sponsored by, authorized by, or endorsed by the Government of the People's Republic of Bangladesh, or any sovereign state or foreign government worldwide.</strong>
+          <strong>MSR Studio is an independent private developer. Our applications are NOT affiliated with, authorized by, or endorsed by the Government of Bangladesh, any foreign government, or any official government agency.</strong>
         </div>
-
         <p>
-          In accordance with Google Play's <strong>Government Apps Policy</strong>:
+          Public reference details (such as national emergency numbers like 999 or educational country statistics) are compiled purely for public convenience and educational knowledge.
         </p>
-        <ol>
-          <li><strong>Private Initiatives:</strong> Both <em>Country Info | দেশ পরিচিতি</em> and <em>Chhuti &ndash; Bangladesh Travel Guide</em> are developed and maintained as independent private software applications.</li>
-          <li><strong>No Official State Representation:</strong> We do not claim to represent or possess an official state mandate from any government ministry, tourism board, or statutory department.</li>
-          <li><strong>Public Reference Data:</strong> Public emergency numbers (e.g., 999, Tourist Police) and statistical country summaries are compiled solely for traveler convenience, educational reference, and emergency preparedness.</li>
-        </ol>
       </article>
 
-      <!-- Section 10 -->
+      <!-- Section 8 -->
       <article class="policy-section" id="data-safety-matrix">
         <div class="section-header">
-          <span class="section-num">10</span>
-          <h2 class="section-title">Google Play Data Safety Form Alignment</h2>
+          <span class="section-num">8</span>
+          <h2 class="section-title">Google Play Data Safety Matrix</h2>
         </div>
-        <p>
-          This matrix matches the official declarations submitted across our apps in the <strong>Google Play Console Data Safety Form</strong>:
-        </p>
+        <p>This matrix matches declarations in the Google Play Console Data Safety form:</p>
 
         <div class="table-container">
           <table>
             <thead>
               <tr>
-                <th>Data Category</th>
+                <th>Data Type</th>
                 <th>App Scope</th>
-                <th>Collected / Shared</th>
+                <th>Collected / Uploaded</th>
                 <th>Purpose</th>
-                <th>Ephemeral</th>
                 <th>Encrypted in Transit</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Location</strong><br><small>Approximate / Precise</small></td>
+                <td><strong>Location</strong></td>
                 <td>Chhuti Only</td>
-                <td>Accessed on-device; <strong>NOT uploaded</strong></td>
-                <td>Distance calculation to spots &amp; map sorting</td>
-                <td><span class="badge badge-accent">Yes (Ephemeral)</span></td>
+                <td>On-device only; <strong>NOT uploaded</strong></td>
+                <td>Distance calculations &amp; map sorting</td>
                 <td>N/A (Device memory only)</td>
               </tr>
               <tr>
                 <td><strong>Location</strong></td>
                 <td>Country Info</td>
-                <td><strong>NOT accessed or requested</strong></td>
-                <td>N/A</td>
+                <td><strong>NOT accessed</strong></td>
                 <td>N/A</td>
                 <td>N/A</td>
               </tr>
               <tr>
-                <td><strong>Device / Other IDs</strong><br><small>Advertising ID (`AD_ID`)</small></td>
+                <td><strong>Device ID (`AD_ID`)</strong></td>
                 <td>All Apps</td>
-                <td>Processed via Google AdMob SDK</td>
-                <td>Advertising, fraud prevention, frequency capping</td>
-                <td>No</td>
+                <td>Processed via Google AdMob</td>
+                <td>Advertising &amp; fraud prevention</td>
                 <td><span class="badge badge-primary">Yes (HTTPS / TLS)</span></td>
               </tr>
               <tr>
-                <td><strong>App Info &amp; Diagnostics</strong><br><small>Crash logs, performance</small></td>
+                <td><strong>User Bookmarks</strong></td>
                 <td>All Apps</td>
-                <td>Collected anonymously (if enabled)</td>
-                <td>Analytics, performance monitoring, bug fixing</td>
-                <td>No</td>
-                <td><span class="badge badge-primary">Yes (HTTPS / TLS)</span></td>
-              </tr>
-              <tr>
-                <td><strong>User Favorites &amp; Notes</strong></td>
-                <td>All Apps</td>
-                <td>Stored in local sandbox only; <strong>NOT collected</strong></td>
-                <td>Offline app usage &amp; personal preferences</td>
-                <td>Saved on device</td>
-                <td>N/A (Local SQLite)</td>
+                <td>Saved on device; <strong>NOT uploaded</strong></td>
+                <td>Offline app usage &amp; preferences</td>
+                <td>N/A (Local Sandbox)</td>
               </tr>
             </tbody>
           </table>
         </div>
       </article>
 
-      <!-- Section 11 -->
-      <article class="policy-section" id="data-retention-deletion">
+      <!-- Section 9 -->
+      <article class="policy-section" id="data-deletion">
         <div class="section-header">
-          <span class="section-num">11</span>
+          <span class="section-num">9</span>
           <h2 class="section-title">Data Retention &amp; User Deletion Rights</h2>
         </div>
-
         <div class="callout callout-success">
           <div class="callout-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
-            Complete User Autonomy Over Data Deletion
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+            Complete User Data Control
           </div>
-          Because MSR Studio apps do not maintain centralized user accounts on remote servers, you can completely erase all your saved data at any moment directly from your phone.
+          Because user data is stored locally on your device, you can completely wipe your data at any time.
         </div>
-
-        <h3 style="font-size:1.05rem; font-weight:700; margin:1.25rem 0 0.5rem; color:var(--text-main);">Methods to Clear or Delete Your Data:</h3>
         <ol>
-          <li>
-            <strong>Inside the Application:</strong> Use the in-app <strong>Settings / Offline Manager</strong> screen and tap <strong>"Clear Cache"</strong> or <strong>"Reset All Bookmarks"</strong>.
-          </li>
-          <li>
-            <strong>Via Android Device Settings:</strong>
-            Go to <em>Settings &gt; Apps &gt; [Country Info / Chhuti] &gt; Storage &amp; cache &gt; Clear Storage / Clear Cache</em>. This permanently wipes all offline databases, cached images, and user preference files.
-          </li>
-          <li>
-            <strong>Uninstalling the App:</strong>
-            Uninstalling the app removes all sandbox storage, offline databases, and cached assets instantly.
-          </li>
-          <li>
-            <strong>Support Correspondence Deletion:</strong>
-            If you have emailed us for support or inquiries and wish for your email thread to be purged from our inbox, send a deletion request to <a href="mailto:blueskyoceanbd@gmail.com">blueskyoceanbd@gmail.com</a>. We will permanently delete your emails within 30 business days.
-          </li>
+          <li><strong>Clear App Storage:</strong> Go to Android <em>Settings &gt; Apps &gt; [App Name] &gt; Storage &gt; Clear Storage / Clear Cache</em> to wipe all saved local preferences.</li>
+          <li><strong>Uninstall:</strong> Removing the app permanently erases its local storage sandbox.</li>
+          <li><strong>Support Email Purge:</strong> If you have emailed us for support, you can request email correspondence deletion by contacting <a href="mailto:blueskyoceanbd@gmail.com">blueskyoceanbd@gmail.com</a>.</li>
         </ol>
       </article>
 
-      <!-- Section 12 -->
+      <!-- Section 10 -->
       <article class="policy-section" id="security">
         <div class="section-header">
-          <span class="section-num">12</span>
-          <h2 class="section-title">Data Security Measures</h2>
+          <span class="section-num">10</span>
+          <h2 class="section-title">Data Security</h2>
         </div>
         <p>
-          We employ robust technical safeguards to protect all data handled across our applications:
+          All network communications (such as ad requests or map tiles) use standard encrypted HTTPS/TLS protocols. Local app configurations remain protected within Android's private application sandbox.
         </p>
-        <ul>
-          <li><strong>Transport Layer Security (TLS/HTTPS):</strong> All network communications (downloading country data, travel guides, map tiles, and ad assets) utilize encrypted HTTPS/TLS 1.2+ protocols.</li>
-          <li><strong>Android Application Sandbox:</strong> Local database records and user configurations are sequestered within Android's private app sandbox, preventing unauthorized access by other applications on your device.</li>
-          <li><strong>No Remote User Database:</strong> By avoiding unnecessary cloud databases for user activity, we eliminate the risk of remote server database breaches.</li>
-        </ul>
       </article>
 
-      <!-- Section 13 -->
-      <article class="policy-section" id="user-rights">
-        <div class="section-header">
-          <span class="section-num">13</span>
-          <h2 class="section-title">International Compliance &amp; User Rights</h2>
-        </div>
-        <p>
-          MSR Studio respects international data privacy frameworks, including the European Union General Data Protection Regulation (<strong>GDPR</strong>), the California Consumer Privacy Act (<strong>CCPA/CPRA</strong>), and the laws of Bangladesh:
-        </p>
-        <ul>
-          <li><strong>Right of Access &amp; Portability:</strong> You have full visibility into what information is stored on your device via the app interface.</li>
-          <li><strong>Right to Rectification:</strong> You can edit or replace any bookmarked trip or country fact at any time.</li>
-          <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can purge all application records instantly by clearing app storage or uninstalling.</li>
-          <li><strong>Right to Opt Out of Tracking:</strong> You can opt out of personalized ad targeting using Android's native Privacy settings.</li>
-        </ul>
-      </article>
-
-      <!-- Section 14 -->
+      <!-- Section 11 -->
       <article class="policy-section" id="contact">
         <div class="section-header">
-          <span class="section-num">14</span>
-          <h2 class="section-title">Contact Us &amp; Grievance Support</h2>
+          <span class="section-num">11</span>
+          <h2 class="section-title">Contact Us</h2>
         </div>
-        <p>
-          If you have any questions, feedback, concerns, or requests regarding this Privacy Policy or MSR Studio's data practices, please contact us directly:
-        </p>
-
-        <div style="background:var(--bg-subtle); border-radius:12px; padding:1.5rem; margin-top:1rem; border:1px solid var(--border-subtle); display:flex; flex-direction:column; gap:0.75rem;">
-          <div style="display:flex; align-items:center; gap:0.5rem; font-weight:700; font-size:1.1rem; color:var(--text-main);">
-            <span>MSR Studio</span>
-            <span class="badge badge-accent">Verified Developer Account</span>
+        <p>For questions or feedback regarding this policy, please contact:</p>
+        
+        <div style="background:var(--bg-subtle); border-radius:10px; padding:1.25rem; margin-top:0.75rem; border:1px solid var(--border-subtle); display:flex; flex-direction:column; gap:0.5rem;">
+          <div style="font-weight:700; color:var(--text-main);">MSR Studio</div>
+          <div style="font-size:0.9rem; color:var(--text-muted);">
+            <strong>Developer Email:</strong>
+            <a href="mailto:blueskyoceanbd@gmail.com" style="margin-left:0.25rem; font-family:var(--font-mono);">blueskyoceanbd@gmail.com</a>
           </div>
-          <div style="color:var(--text-muted); font-size:0.95rem;">
-            <strong>Support &amp; Privacy Officer Email:</strong>
-            <a href="mailto:blueskyoceanbd@gmail.com" style="margin-left:0.35rem; font-family:var(--font-mono); font-weight:600;">blueskyoceanbd@gmail.com</a>
-          </div>
-          <div style="color:var(--text-muted); font-size:0.95rem;">
+          <div style="font-size:0.9rem; color:var(--text-muted);">
             <strong>Country:</strong> Bangladesh
-          </div>
-          <div style="color:var(--text-muted); font-size:0.95rem;">
-            <strong>Response Commitment:</strong> We aim to acknowledge and address all privacy inquiries within 48 to 72 hours.
           </div>
           <div style="margin-top:0.5rem;">
             <button id="copyEmailBtn" class="btn btn-primary" onclick="copySupportEmail()">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                 <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
               </svg>
@@ -1558,17 +1271,13 @@
       <p>&copy; 2026 MSR Studio (Bangladesh). All rights reserved.</p>
       <ul class="footer-links">
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#app-portfolio">Covered Apps</a></li>
-        <li><a href="#countryapp-declaration">Country Info Policy</a></li>
+        <li><a href="#covered-apps">Covered Apps</a></li>
         <li><a href="#location-declaration">Location Policy</a></li>
-        <li><a href="#advertising-admob">AdMob Declarations</a></li>
+        <li><a href="#advertising-admob">AdMob</a></li>
         <li><a href="#government-affiliation">Non-Gov Statement</a></li>
-        <li><a href="#data-retention-deletion">Data Deletion</a></li>
-        <li><a href="mailto:blueskyoceanbd@gmail.com">Contact Developer</a></li>
+        <li><a href="#data-deletion">Data Deletion</a></li>
+        <li><a href="mailto:blueskyoceanbd@gmail.com">Contact</a></li>
       </ul>
-      <p style="font-size:0.75rem; color:var(--text-subtle); max-width:650px;">
-        This Privacy Policy is designed to comply with Google Play Developer Program Policies, Google Play Data Safety specifications, and Android platform requirements.
-      </p>
     </div>
   </footer>
 
@@ -1643,7 +1352,7 @@
       showToast('Email copied: ' + text);
     }
 
-    // Search / Filter sections in real-time
+    // Real-time search filter across sections
     const searchInput = document.getElementById('policySearchInput');
     const sections = document.querySelectorAll('.policy-section');
 
@@ -1655,15 +1364,11 @@
           return;
         }
         const text = section.innerText.toLowerCase();
-        if (text.includes(query)) {
-          section.style.display = 'block';
-        } else {
-          section.style.display = 'none';
-        }
+        section.style.display = text.includes(query) ? 'block' : 'none';
       });
     });
 
-    // Active link highlighting in sidebar based on scroll
+    // Active link highlighting in sidebar
     const tocLinks = document.querySelectorAll('.toc-link');
     window.addEventListener('scroll', () => {
       let currentSectionId = '';
